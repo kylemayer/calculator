@@ -25,25 +25,22 @@ const divRes = document.getElementById('d-result');
 // set event listeners on each button, do math, and update DOM
 
 addButton.addEventListener('click', () => {
-    const solution = Number(addOne.value) + Number(addTwo.value);
-    addRes.textContent = solution;
-   
+    const sum = Number(addOne.value) + Number(addTwo.value);
+    addRes.textContent = sum;
 });
 
 subButton.addEventListener('click', () => {
-    subRes.textContent = subOne.value - subTwo.value; 
-  //  subOne.value = '';
-  //  subTwo.value = '';
+    const difference = Number(subOne.value) - Number(subTwo.value);
+    subRes.textContent = difference;
 });
 
 multButton.addEventListener('click', () => {
-    multRes.textContent = multOne.value * multTwo.value; 
-  //  multOne.value = '';
-  //  multTwo.value = '';
+    const product = Number(multOne.value) * Number(multTwo.value);
+    multRes.textContent = product;
 });
 
 divButton.addEventListener('click', () => {
-    divRes.textContent = divOne.value / divTwo.value; 
-   // divOne.value = '';
-   // divTwo.value = '';
+    const quotient = Number(divOne.value) / Number(divTwo.value);
+    divRes.textContent = quotient;
+  
 });
