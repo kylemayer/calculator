@@ -102,45 +102,90 @@ footer {
     box-shadow: var(--shadow);
 }
   
+.add-button {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid indigo;
+    
+}
+
+.add-button:hover {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.sub-button {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid indigo;
+}
+.sub-button:hover {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.mult-button {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid indigo;
+    
+}
+
+.mult-button:hover {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.div-button {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid indigo;
+    
+}
+.div-button:hover {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
 .n1 {
     background-color: seashell;
-
+    border-radius: 5px;
 }
 
 .n2 {
     background-color: seashell;
-
+    border-radius: 5px;
 }
 
 .n3 {
     background-color: floralwhite;
-
+    border-radius: 5px;
 }
 
 .n4 {
     background-color: floralwhite;
-
+    border-radius: 5px;
 }
 
 .n5 {
     background-color: lightyellow;
-
+    border-radius: 5px;
 }
 
 .n6 {
     background-color: lightyellow;
-
+    border-radius: 5px;
 }
 
 .n7 {
     background-color: rgb(244, 252, 244);
+    border-radius: 5px;
 
 }
 
 .n8 {
     background-color:  rgb(244, 252, 244);
-
+    border-radius: 5px;
 }
 
   @keyframes pulse {
