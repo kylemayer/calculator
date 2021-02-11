@@ -1,3 +1,5 @@
+import { add, diff, mult, divi } from './utilities.js';
+
 // grab DOM elements
 const addOne = document.getElementById ('add-one');
 const addTwo = document.getElementById ('add-two');
@@ -25,22 +27,30 @@ const divRes = document.getElementById('d-result');
 // set event listeners on each button, do math, and update DOM
 
 addButton.addEventListener('click', () => {
-    const sum = Number(addOne.value) + Number(addTwo.value);
+    const x = Number(addOne.value);
+    const y = Number(addTwo.value);
+    const sum = add(x, y);
     addRes.textContent = sum;
 });
 
 subButton.addEventListener('click', () => {
-    const difference = Number(subOne.value) - Number(subTwo.value);
+    const x = Number(subOne.value);
+    const y = Number(subTwo.value);
+    const difference = diff(x, y);
     subRes.textContent = difference;
 });
 
 multButton.addEventListener('click', () => {
-    const product = Number(multOne.value) * Number(multTwo.value);
+    const x = Number(multOne.value);
+    const y = Number(multTwo.value);
+    const product = mult(x, y);
     multRes.textContent = product;
+
 });
 
 divButton.addEventListener('click', () => {
-    const quotient = Number(divOne.value) / Number(divTwo.value);
+    const x = Number(divOne.value);
+    const y = Number(divTwo.value);
+    const quotient = divi(x, y);
     divRes.textContent = quotient;
-  
 });
